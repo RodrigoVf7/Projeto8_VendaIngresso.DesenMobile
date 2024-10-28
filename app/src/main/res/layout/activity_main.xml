@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código do Ingresso" />
+
+    <EditText
+        android:id="@+id/editValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Valor do Ingresso" />
+
+    <EditText
+        android:id="@+id/editTaxa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Taxa de Conveniência" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioPadrao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresso Padrão" />
+
+        <RadioButton
+            android:id="@+id/radioVip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresso VIP" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editFuncaoComprador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Função do Comprador (VIP)"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Valor Final" />
+
+</LinearLayout>
